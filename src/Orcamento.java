@@ -6,9 +6,9 @@ public class Orcamento
     
     //Construtor do Orçamento
     public Orcamento(Peca[] peça, Servico[] serviços, double valorTotal){
-    	this.peça = peça;
-    	this.serviços = serviços;
-    	this.valorTotal = valorTotal;  	
+    	setPeça(peça);
+    	setServiços(serviços);
+    	setValorTotal(valorTotal);  	
     }
     
     //metodo para calcular o orçamento
