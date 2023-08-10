@@ -12,6 +12,10 @@ public class Peca {
 
     public void setNome(String nome)
     {
+        if (nome == null || nome.length() < 1) {
+            System.out.println("nome nao pode ser nulo");
+            return;
+        }
         this.nome = nome;
     }
 
@@ -39,6 +43,10 @@ public class Peca {
 
     public void setFabricante(String fabricante)
     {
+        if (fabricante == null || fabricante.length() < 1) {
+            System.out.println("CPF invalido");
+            return;
+        }
         this.fabricante = fabricante;
     }
 

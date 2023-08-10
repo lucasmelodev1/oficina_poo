@@ -11,30 +11,26 @@
 
     public void setNome(String nome)
     {
+        if (nome == null || nome.length() < 1) {
+            System.out.println("nome nao pode ser nulo");
+            return;
+        }
         this.nome = nome;
     }
 
-    public String getNome()
-    {
-        return this.nome;
-    }
+    public String getNome() { return this.nome; }
 
     public void setValor(double valor)
     {
         if(valor <= 0)
         {
             System.out.println("valor precisa ser maior que 0");
+            return;
         }
-        else
-        {
-            this.valor = valor;
-        }
+        this.valor = valor;
     }
 
-    public double getValor()
-    {
-        return this.valor;
-    }
+    public double getValor() { return this.valor; }
 
     public void finalizarServico()
     {
