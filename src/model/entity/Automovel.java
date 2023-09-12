@@ -1,25 +1,29 @@
-package br.com.oficina_poo;
+package model.entity;
 
 import java.time.Year;
 
 public class Automovel {
-    String marca;
-    String cor;
-    String placa;
-    int ano;
-    int quilometragem;
-    Cliente proprietario;
+	private Long id;
+	
+	private String marca;
 
-    public Automovel(String marca, String cor, String placa, int ano, int quilometragem, Cliente proprietario) {
-        setMarca(marca);
-        setCor(cor);
-        setPlaca(placa);
-        setAno(ano);
-        setQuilometragem(quilometragem);        
-        setProprietario(proprietario);
-    }
+	private String cor;
 
-    public String getMarca() { return this.marca; }
+	private String placa;
+
+	private int ano;
+
+	private int quilometragem;
+
+	private Cliente proprietario;
+
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getMarca() { return this.marca; }
     public void setMarca(String marca) {
         if (marca == null || marca.length() < 1) {
             System.out.println("Marca nao pode ser vazio");
@@ -71,4 +75,5 @@ public class Automovel {
     public void setProprietario(Cliente proprietario) {
         this.proprietario = proprietario;
     }
+
 }

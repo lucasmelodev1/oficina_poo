@@ -1,3 +1,5 @@
+package model.entity;
+
 public class Orcamento
 {
 	private Peca[] pecas;
@@ -9,6 +11,10 @@ public class Orcamento
     	setPecas(pecas);
     	setServicos(servicos);
     	setValorTotal(valorTotal);  	
+    }
+    
+    public Orcamento() {
+    	
     }
     
     //metodo para calcular o orçamento
@@ -65,3 +71,4 @@ public class Orcamento
 		System.out.println("Valor Total do orçamento é: " +  valorTotal);
 	}	
 }
+

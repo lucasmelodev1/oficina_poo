@@ -1,14 +1,27 @@
- public class Servico {
-    private String nome;
+package model.entity;
+
+public class Servico {
+	private Long id;
+	private String nome;
     private double valor;
-    private boolean statusServico;
 
     public Servico(String nome,double valor)
     {
         setNome(nome);
         setValor(valor);
     }
+    
+    public Servico() {
+    	
+    }
 
+    public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
     public void setNome(String nome)
     {
         if (nome == null || nome.length() < 1) {
@@ -32,16 +45,4 @@
 
     public double getValor() { return this.valor; }
 
-    public void finalizarServico()
-    {
-        if(statusServico == true)
-        {
-            System.out.println("o serviço já foi finalizado");
-        }
-        else
-        {
-            this.statusServico = true;
-            System.out.println("serviço finalizado com sucesso");
-        }
-    }
 }

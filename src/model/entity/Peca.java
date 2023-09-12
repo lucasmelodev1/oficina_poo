@@ -1,7 +1,13 @@
+package model.entity;
+
+
+
 public class Peca {
+	private Long id;
     private String nome;
     private double preco;
-    private String fabricante;
+
+	private String fabricante;
 
     public Peca(String nome, double preco,String fabricante)
     {
@@ -9,6 +15,17 @@ public class Peca {
         setPreco(preco);
         setFabricante(fabricante);
     }
+    
+    public Peca() {
+	}
+    
+    public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
     public void setNome(String nome)
     {
@@ -55,3 +72,4 @@ public class Peca {
         return this.fabricante;
     }
 }
+
