@@ -59,6 +59,9 @@ public class Main {
 				}
 
 				break;
+			case 2:
+				
+				break;
 			case 3:
 				try {
 					System.out.println("por favor, digite o id do cliente a ser deletado");

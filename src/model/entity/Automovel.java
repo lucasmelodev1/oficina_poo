@@ -16,6 +16,18 @@ public class Automovel {
 	private int quilometragem;
 
 	private Cliente proprietario;
+	
+	public Automovel(String marca, String cor, String placa, int ano, int quilometragem, Cliente proprietario) {
+        setMarca(marca);
+        setCor(cor);
+        setPlaca(placa);
+        setAno(ano);
+        setQuilometragem(quilometragem);        
+        setProprietario(proprietario);
+    }
+	public Automovel() {
+		
+	}
 
 	public Long getId() {
 		return id;

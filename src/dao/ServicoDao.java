@@ -1,6 +1,6 @@
 package dao;
 
-import java.sql.Connection;
+import java.sql.Connection; //NEW THROW 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -21,7 +21,7 @@ public class ServicoDao extends BaseDaoImpl<Servico> {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, servico.getNome());
 			ps.setDouble(2,servico.getValor());
-			ps.execute();
+			ps.execute(); 
 			ps.close();
 
 			sql = "SELECT * FROM tb_servicos as e WHERE e.nome=?";

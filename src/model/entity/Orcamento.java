@@ -1,13 +1,18 @@
 package model.entity;
 
+import java.util.List;
+
 public class Orcamento
 {
-	private Peca[] pecas;
-    private Servico[] servicos;
+	private Long id;
+	private Cliente cliente;
+	private Automovel automovel;
+	private List<Peca> pecas;
+    private List<Servico> servicos;
     private double valorTotal;
     
     //Construtor do Orçamento
-    public Orcamento(Peca[] pecas, Servico[] servicos, double valorTotal){
+    public Orcamento(List<Peca> pecas, List<Servico> servicos, double valorTotal){
     	setPecas(pecas);
     	setServicos(servicos);
     	setValorTotal(valorTotal);  	
@@ -20,16 +25,38 @@ public class Orcamento
     //metodo para calcular o orçamento
     public double getOrcamento() { return valorTotal; }
     
+    public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+    public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public Automovel getAutomovel() {
+		return automovel;
+	}
+
+	public void setAutomovel(Automovel automovel) {
+		this.automovel = automovel;
+	}
     //metodo get peça
-	public Peca[] getPeca() 
+	public List<Peca> getPeca() 
 	{
 		return this.pecas;
 	}
 	
 	//metodo set peça
-	public void setPecas(Peca[] pecas)
+	public void setPecas(List<Peca> pecas)
 	{	//verificando se o valor não é nulo
-		if (pecas == null || pecas.length < 1)
+		if (pecas == null || pecas.size() < 1)
 		{
 			System.out.println("Valor da peça Inválido!");
 			return;
@@ -38,10 +65,10 @@ public class Orcamento
 	}
 		
 	//metodo get de serviços
-	public Servico[] getServicos() { return servicos; }
+	public List<Servico> ListgetServicos() { return servicos; }
 	
 	//metodo set de serviços
-	public void setServicos(Servico[] servicos) 
+	public void setServicos(List<Servico> servicos) 
 	{	//verificando se o valor não é nulo!
 		if(servicos == null) 
 		{

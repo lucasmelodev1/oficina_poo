@@ -46,7 +46,7 @@ public class PecaDao extends BaseDaoImpl<Peca> {
 	@Override
 	public void deletar(Peca peca) {
 		Connection con = getConnection();
-		String sql = "DELETE FROM tb_pecas WHERE id = ?";
+		String sql = "DELETE FROM tb_pecas WHERE idPeca = ?";
 
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -65,7 +65,7 @@ public class PecaDao extends BaseDaoImpl<Peca> {
 	@Override
 	public void alterar(Peca peca) {
 		Connection con = getConnection();
-		String sql = "UPDATE tb_pecas set nome = ?, preco = ?, fabricante = ?  WHERE id = ?";
+		String sql = "UPDATE tb_pecas set nome = ?, preco = ?, fabricante = ?  WHERE idPeca = ?";
 
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -87,7 +87,7 @@ public class PecaDao extends BaseDaoImpl<Peca> {
 	@Override
 	public Boolean buscar(Peca peca) {
 		Connection con = getConnection();
-		String sql = "SELECT * FROM tb_pecas WHERE id = ?";
+		String sql = "SELECT * FROM tb_pecas WHERE idPeca = ?";
 
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
