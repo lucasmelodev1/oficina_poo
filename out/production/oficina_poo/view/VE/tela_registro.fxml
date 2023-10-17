@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="176.0" layoutY="137.0" prefHeight="45.0" prefWidth="248.0" text="Registre-se agora!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="login" layoutX="164.0" layoutY="183.0" prefHeight="26.0" prefWidth="275.0" style="-fx-border-color: ASD;" />
+      <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="167.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="187.0" layoutY="189.0" text="Nome Completo" textFill="#00000077" />
+      <Button fx:id="entrar" layoutX="265.0" layoutY="348.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="76.0" style="-fx-background-color: #333544;" text="Registrar" textAlignment="CENTER" textFill="WHITE" />
+      <CheckBox layoutX="167.0" layoutY="316.0" mnemonicParsing="false" text="Gerente" />
+      <CheckBox layoutX="243.0" layoutY="316.0" mnemonicParsing="false" text="Funcionário" />
+      <ImageView fitHeight="260.0" fitWidth="169.0" layoutX="449.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg_rigth_down.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="260.0" fitWidth="169.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg_left_up.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="187.0" layoutX="224.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo_padrao.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="189.0" layoutY="221.0" text="Usuário" textFill="#00000077" />
+      <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="169.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_user.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="login1" layoutX="166.0" layoutY="215.0" prefHeight="26.0" prefWidth="275.0" style="-fx-border-color: ASD;" />
+      <Label layoutX="188.0" layoutY="221.0" text="Usuário" textFill="#00000077" />
+      <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="168.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="188.0" layoutY="251.0" text="Usuário" textFill="#00000077" />
+      <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="168.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_user.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="login11" layoutX="166.0" layoutY="247.0" prefHeight="26.0" prefWidth="275.0" style="-fx-border-color: ASD;" />
+      <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="169.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_password.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="189.0" layoutY="252.0" text="Senha" textFill="#00000077" />
+      <TextField fx:id="login111" layoutX="165.0" layoutY="279.0" prefHeight="26.0" prefWidth="275.0" style="-fx-border-color: ASD;" />
+      <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="170.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_password.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="190.0" layoutY="284.0" text="Confirmar senha" textFill="#00000077" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DISAPPEAR" />
+   </cursor>
+</fx:root>
