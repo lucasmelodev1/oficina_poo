@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="63.0" fitWidth="97.0" layoutX="73.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@3icon_home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="63.0" layoutX="212.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1icon_automoveis.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="286.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@peças_stage.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="63.0" layoutX="360.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@6icon_serviços.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="49.0" layoutX="548.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@7icon_logout.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="82.0" layoutY="68.0" text="Home" />
+      <Label layoutX="148.0" layoutY="67.0" text="Clientes" />
+      <Label layoutX="211.0" layoutY="68.0" text="Automoveis" />
+      <Label layoutX="302.0" layoutY="68.0" text="Peças" />
+      <Label layoutX="368.0" layoutY="68.0" text="Serviços" />
+      <Label layoutX="434.0" layoutY="68.0" prefHeight="17.0" prefWidth="63.0" text="Orçamento" />
+      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="138.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2icon_clientes.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="63.0" layoutX="434.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@4icon_orçamento.png" />
+         </image>
+      </ImageView>
+      <TextField alignment="CENTER" layoutX="177.0" layoutY="106.0" prefHeight="25.0" prefWidth="184.0" />
+      <Label layoutX="202.0" layoutY="110.0" text="Pesquisar" textFill="#727272" />
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="181.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Search_fill%20(1).png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="10.0" fill="#ababab" height="49.0" layoutX="5.0" layoutY="167.0" stroke="#ababab" strokeType="INSIDE" width="594.0" />
+      <Button layoutX="371.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #333544;" text="Adicionar" textFill="WHITE" />
+      <Label layoutX="38.0" layoutY="130.0" prefHeight="21.0" prefWidth="85.0" text="Nome">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="149.0" prefHeight="15.0" prefWidth="54.0" text="Fabricante" textFill="#797979">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="136.0" prefHeight="15.0" prefWidth="17.0" text="ID">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="356.0" layoutY="141.0" prefHeight="21.0" prefWidth="32.0" text="Preço" />
+      <Label layoutX="36.0" layoutY="174.0" prefHeight="21.0" prefWidth="170.0" text="Motor">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="181.0" prefHeight="15.0" prefWidth="17.0" text="01">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="190.0" prefHeight="21.0" prefWidth="184.0" text="Marca do motor" textFill="#4d4d4d">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="181.0" prefHeight="21.0" prefWidth="72.0" text="R$ 5.000,00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="542.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_Edit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="569.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_trash.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="49.0" layoutX="2.0" layoutY="217.0" stroke="WHITE" strokeType="INSIDE" width="594.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab" height="49.0" layoutX="5.0" layoutY="266.0" stroke="#ababab" strokeType="INSIDE" width="594.0" />
+      <Label layoutX="13.0" layoutY="279.0" prefHeight="15.0" prefWidth="17.0" text="03">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="568.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_trash.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="541.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_Edit.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="56.0" layoutX="5.0" layoutY="315.0" stroke="WHITE" strokeType="INSIDE" width="594.0" />
+      <Label layoutX="16.0" layoutY="230.0" prefHeight="15.0" prefWidth="17.0" text="02">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="568.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_trash.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="38.0" layoutY="223.0" prefHeight="21.0" prefWidth="170.0" text="Motor">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="541.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_Edit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="39.0" layoutY="239.0" prefHeight="21.0" prefWidth="184.0" text="Marca do Motor" textFill="#4d4d4d">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="540.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_Edit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="567.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_trash.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="15.0" layoutY="334.0" prefHeight="15.0" prefWidth="17.0" text="04">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ababab" height="49.0" layoutX="5.0" layoutY="373.0" stroke="#ababab" strokeType="INSIDE" width="594.0" />
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="540.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_Edit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="16.0" layoutY="387.0" prefHeight="15.0" prefWidth="17.0" text="05">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="567.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_trash.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="39.0" layoutY="395.0" prefHeight="21.0" prefWidth="184.0" text="Marca do Motor" textFill="#4d4d4d">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="379.0" prefHeight="21.0" prefWidth="170.0" text="Motor">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="288.0" prefHeight="21.0" prefWidth="184.0" text="Marca do Motor" textFill="#4d4d4d">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="272.0" prefHeight="21.0" prefWidth="170.0" text="Motor">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="325.0" prefHeight="21.0" prefWidth="170.0" text="Motor">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="341.0" prefHeight="21.0" prefWidth="184.0" text="Marca do Motor" textFill="#4d4d4d">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="513.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="513.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="513.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="513.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="513.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="334.0" layoutY="229.0" prefHeight="21.0" prefWidth="72.0" text="R$ 5.000,00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="278.0" prefHeight="21.0" prefWidth="72.0" text="R$ 5.000,00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="331.0" prefHeight="21.0" prefWidth="72.0" text="R$ 5.000,00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="386.0" prefHeight="21.0" prefWidth="72.0" text="R$ 5.000,00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <SplitPane layoutX="147.0" layoutY="57.0" orientation="VERTICAL" prefHeight="348.0" prefWidth="278.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="250.0" prefWidth="276.0">
+               <children>
+                  <Label layoutX="124.0" layoutY="22.0" text="Editar">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="71.0" text="Nome" />
+                  <TextField layoutX="25.0" layoutY="92.0" prefHeight="25.0" prefWidth="235.0" />
+                  <Label layoutX="25.0" layoutY="138.0" text="Fabricante" />
+                  <TextField layoutX="25.0" layoutY="159.0" prefHeight="25.0" prefWidth="235.0" />
+                  <Label layoutX="25.0" layoutY="208.0" text="Preço" />
+                  <TextField layoutX="25.0" layoutY="229.0" prefHeight="25.0" prefWidth="235.0" />
+                  <Button layoutX="108.0" layoutY="278.0" mnemonicParsing="false" text="Confirmar" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>
