@@ -10,27 +10,27 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fitHeight="63.0" fitWidth="97.0" layoutX="73.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="botaoHome" fitHeight="63.0" fitWidth="97.0" layoutX="73.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@3icon_home.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="67.0" fitWidth="63.0" layoutX="212.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="botaoAutomoveis" fitHeight="67.0" fitWidth="63.0" layoutX="212.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@1icon_automoveis.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="286.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="botaoPecas" fitHeight="63.0" fitWidth="63.0" layoutX="286.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@5icon_peças.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="70.0" fitWidth="63.0" layoutX="360.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="botaoServico" fitHeight="70.0" fitWidth="63.0" layoutX="360.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@6icon_serviços.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="51.0" fitWidth="49.0" layoutX="548.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="botaoSair" fitHeight="51.0" fitWidth="49.0" layoutX="548.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@7icon_logout.png" />
          </image>
@@ -41,17 +41,17 @@
       <Label layoutX="302.0" layoutY="68.0" text="Peças" />
       <Label layoutX="368.0" layoutY="68.0" text="Serviços" />
       <Label layoutX="434.0" layoutY="68.0" prefHeight="17.0" prefWidth="63.0" text="Orçamento" />
-      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="138.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="botaoClientes" fitHeight="63.0" fitWidth="63.0" layoutX="138.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@2icon_clientes.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="70.0" fitWidth="63.0" layoutX="434.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="botaoOrcamento" fitHeight="70.0" fitWidth="63.0" layoutX="434.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@orçamento_stage.png" />
          </image>
       </ImageView>
-      <TextField alignment="CENTER" layoutX="177.0" layoutY="106.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="pesquisar" alignment="CENTER" layoutX="177.0" layoutY="106.0" prefHeight="25.0" prefWidth="184.0" />
       <Label layoutX="202.0" layoutY="110.0" text="Pesquisar" textFill="#727272" />
       <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="181.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -59,7 +59,7 @@
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="10.0" fill="#ababab" height="49.0" layoutX="5.0" layoutY="167.0" stroke="#ababab" strokeType="INSIDE" width="594.0" />
-      <Button fx:id="adicionar" layoutX="371.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #333544;" text="Adicionar" textFill="WHITE" />
+      <Button fx:id="botaoAdd" layoutX="371.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #333544;" text="Adicionar" textFill="WHITE" />
       <Label layoutX="38.0" layoutY="135.0" prefHeight="21.0" prefWidth="85.0" text="Automóvel">
          <font>
             <Font size="15.0" />
@@ -91,7 +91,7 @@
             <Image url="@icon_Edit.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="569.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="botaoExcluir" fitHeight="17.0" fitWidth="17.0" layoutX="569.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@icon_trash.png" />
          </image>
@@ -160,12 +160,12 @@
             <Image url="@icon_trash.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="513.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="botaoVisualisar" fitHeight="17.0" fitWidth="17.0" layoutX="513.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@View_fill.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="513.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="botaoVisualisar" fitHeight="17.0" fitWidth="17.0" layoutX="513.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@View_fill.png" />
          </image>
