@@ -2,6 +2,8 @@ package model.entity;
 
 import java.util.List;
 
+import exceptions.InfoInvalidaException;
+
 public class Orcamento
 {
 	private Long id;
@@ -12,7 +14,7 @@ public class Orcamento
     private double valorTotal;
     
     //Construtor do Orçamento
-    public Orcamento(List<Peca> pecas, List<Servico> servicos, double valorTotal){
+    public Orcamento(List<Peca> pecas, List<Servico> servicos, double valorTotal) throws InfoInvalidaException{
     	setPecas(pecas);
     	setServicos(servicos);
     	setValorTotal(valorTotal);  	
@@ -55,12 +57,8 @@ public class Orcamento
 	
 	//metodo set peça
 	public void setPecas(List<Peca> pecas)
-	{	//verificando se o valor não é nulo
-		if (pecas == null || pecas.size() < 1)
-		{
-			System.out.println("Valor da peça Inválido!");
-			return;
-		}
+	{	
+		
 		this.pecas = pecas;
 	}
 		
@@ -69,12 +67,7 @@ public class Orcamento
 	
 	//metodo set de serviços
 	public void setServicos(List<Servico> servicos) 
-	{	//verificando se o valor não é nulo!
-		if(servicos == null) 
-		{
-			System.out.println("Valor do Serviço inválido!");
-			return;
-		}
+	{	
 		this.servicos = servicos;
 	}
 	
@@ -83,12 +76,12 @@ public class Orcamento
 		return valorTotal;
 	}
 	//metodo set do valor total
-	public void setValorTotal(double valorTotal) 
+	public void setValorTotal(double valorTotal) throws InfoInvalidaException
 	{
 		if(valorTotal < 0) 
 		{
-			System.out.println("Valor do orçamento zerado ou negativo!");
-			return;
+			throw new InfoInvalidaException("Valor do orçamento zerado ou negativo!");
+			
 		}
 		this.valorTotal = valorTotal;
 	}

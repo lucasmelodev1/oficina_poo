@@ -1,5 +1,7 @@
 package model.entity;
 
+import exceptions.InfoInvalidaException;
+
 public class Cliente {
 	private Long id;
 
@@ -9,7 +11,7 @@ public class Cliente {
 
 	private String cpf;
 	
-	 public Cliente(String nome, Endereco endereco, String cpf) {
+	 public Cliente(String nome, Endereco endereco, String cpf) throws InfoInvalidaException {
 	        setNome(nome);
 	        setEndereco(endereco);
 	        setCPF(cpf);
@@ -31,10 +33,10 @@ public class Cliente {
 		return this.nome;
 	}
 
-	public void setNome(String nome) {
+	public void setNome(String nome) throws InfoInvalidaException {
 		if (nome == null || nome.length() < 1) {
-			System.out.println("Nome nao pode ser vazio");
-			return;
+			throw new InfoInvalidaException("Nome nao pode ser vazio");
+			
 		}
 		this.nome = nome;
 	}
@@ -52,10 +54,9 @@ public class Cliente {
 		return this.cpf;
 	}
 
-	public void setCPF(String cpf) {
+	public void setCPF(String cpf) throws InfoInvalidaException {
 		if (cpf == null || cpf.length() != 11) {
-			System.out.println("CPF invalido");
-			return;
+			throw new InfoInvalidaException("CPF invalido");
 		}
 		this.cpf = cpf;
 	}
