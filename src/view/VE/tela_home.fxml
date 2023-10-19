@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
-<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
@@ -10,75 +10,78 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="600.0">
          <children>
-            <ImageView fitHeight="246.0" fitWidth="327.0" layoutX="167.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+            <HBox alignment="TOP_CENTER" layoutX="14.0" prefHeight="113.0" prefWidth="519.0" spacing="8.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="76.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@3icon_home.png" />
+                           </image>
+                        </ImageView>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Home" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="76.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@2icon_clientes.png" />
+                           </image>
+                        </ImageView>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Clientes" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="76.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@1icon_automoveis.png" />
+                           </image>
+                        </ImageView>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Automóveis" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="210.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="76.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@5icon_peças.png" />
+                           </image>
+                        </ImageView>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Peças" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="310.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="76.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@6icon_serviços.png" />
+                           </image>
+                        </ImageView>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Serviços" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="410.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="76.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@4icon_orçamento.png" />
+                           </image>
+                        </ImageView>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Orçamento" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button layoutX="540.0" layoutY="14.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="46.0" text="Sair" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="226.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../Desktop/view/VE/logo_dashboard.png" />
+                  <Image url="@logo_dashboard.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="63.0" fitWidth="97.0" layoutX="25.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../Desktop/view/VE/home_stage.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="67.0" fitWidth="63.0" layoutX="198.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../Desktop/view/VE/1icon_automoveis.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="286.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../Desktop/view/VE/5icon_peças.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="70.0" fitWidth="63.0" layoutX="373.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../Desktop/view/VE/6icon_serviços.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="109.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../Desktop/view/VE/2icon_clientes.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="70.0" fitWidth="63.0" layoutX="464.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../Desktop/view/VE/4icon_orçamento.png" />
-               </image>
-            </ImageView>
-            <Button fx:id="botaoSair" layoutX="549.0" layoutY="9.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="43.0" style="-fx-background-color: #333544;" text="Sair" textFill="WHITE">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <Lighting>
-                     <bumpInput>
-                        <InnerShadow />
-                     </bumpInput>
-                     <light>
-                        <Light.Distant />
-                     </light>
-                  </Lighting>
-               </effect>
-            </Button>
-            <Label layoutX="327.0" layoutY="397.0" prefHeight="21.0" prefWidth="101.0" text="058.229.276-55">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <Button layoutX="9.0" layoutY="5.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="85.0" style="-fx-background-color: #333544;" textFill="WHITE" visible="false" />
-            <Button layoutX="98.0" layoutY="5.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="85.0" style="-fx-background-color: #333544;" textFill="WHITE" visible="false" />
-            <Button layoutX="454.0" layoutY="5.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="85.0" style="-fx-background-color: #333544;" textFill="WHITE" visible="false" />
-            <Button layoutX="365.0" layoutY="5.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="85.0" style="-fx-background-color: #333544;" textFill="WHITE" visible="false" />
-            <Button layoutX="276.0" layoutY="5.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="85.0" style="-fx-background-color: #333544;" textFill="WHITE" visible="false" />
-            <Button layoutX="187.0" layoutY="5.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="85.0" style="-fx-background-color: #333544;" textFill="WHITE" visible="false" />
-            <Button fx:id="botaoHome" layoutX="28.0" layoutY="73.0" mnemonicParsing="false" text="Home" />
-            <Button fx:id="botaoClientes" layoutX="112.0" layoutY="73.0" mnemonicParsing="false" text="Clientes" />
-            <Button fx:id="botaoAutomoveis" layoutX="191.0" layoutY="73.0" mnemonicParsing="false" text="Automóveis" />
-            <Button fx:id="botaoPecas" layoutX="295.0" layoutY="73.0" mnemonicParsing="false" text="Peças" />
-            <Button fx:id="botaoServicos" layoutX="375.0" layoutY="73.0" mnemonicParsing="false" text="Serviços" />
-            <Button fx:id="botaoOrcamento" layoutX="459.0" layoutY="73.0" mnemonicParsing="false" text="Orçamento" />
          </children>
       </Pane>
    </children>
