@@ -1,11 +1,13 @@
 package model.entity;
 
+import exceptions.InfoInvalidaException;
+
 public class Servico {
 	private Long id;
 	private String nome;
     private double valor;
 
-    public Servico(String nome,double valor)
+    public Servico(String nome,double valor) throws InfoInvalidaException
     {
         setNome(nome);
         setValor(valor);
@@ -22,23 +24,22 @@ public class Servico {
 	public void setId(Long id) {
 		this.id = id;
 	}
-    public void setNome(String nome)
+    public void setNome(String nome) throws InfoInvalidaException
     {
         if (nome == null || nome.length() < 1) {
-            System.out.println("nome nao pode ser nulo");
-            return;
+            throw new InfoInvalidaException("nome nao pode ser nulo");
+  
         }
         this.nome = nome;
     }
 
     public String getNome() { return this.nome; }
 
-    public void setValor(double valor)
+    public void setValor(double valor) throws InfoInvalidaException
     {
         if(valor <= 0)
         {
-            System.out.println("valor precisa ser maior que 0");
-            return;
+            throw new InfoInvalidaException("valor precisa ser maior que 0");
         }
         this.valor = valor;
     }

@@ -1,6 +1,6 @@
 package model.entity;
 
-
+import exceptions.InfoInvalidaException;
 
 public class Peca {
 	private Long id;
@@ -9,7 +9,7 @@ public class Peca {
 
 	private String fabricante;
 
-    public Peca(String nome, double preco,String fabricante)
+    public Peca(String nome, double preco,String fabricante) throws InfoInvalidaException
     {
         setNome(nome);
         setPreco(preco);
@@ -27,11 +27,10 @@ public class Peca {
 		this.id = id;
 	}
 
-    public void setNome(String nome)
+    public void setNome(String nome) throws InfoInvalidaException
     {
         if (nome == null || nome.length() < 1) {
-            System.out.println("nome nao pode ser nulo");
-            return;
+            throw new InfoInvalidaException("nome nao pode ser nulo");
         }
         this.nome = nome;
     }
@@ -41,11 +40,11 @@ public class Peca {
         return this.nome;
     }
 
-    public void setPreco(double preco)
+    public void setPreco(double preco) throws InfoInvalidaException
     {
         if(preco <= 0)
         {
-            System.out.println("preço precisa ser maior que 0");
+            throw new InfoInvalidaException("preço precisa ser maior que 0");
         }
         else
         {
@@ -58,11 +57,10 @@ public class Peca {
         return this.preco;
     }
 
-    public void setFabricante(String fabricante)
+    public void setFabricante(String fabricante) throws InfoInvalidaException
     {
         if (fabricante == null || fabricante.length() < 1) {
-            System.out.println("CPF invalido");
-            return;
+            throw new InfoInvalidaException("CPF invalido");
         }
         this.fabricante = fabricante;
     }

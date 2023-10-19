@@ -1,5 +1,7 @@
 package model.entity;
 
+import exceptions.InfoInvalidaException;
+
 public class Endereco {
 
 	private Long id;
@@ -10,7 +12,7 @@ public class Endereco {
 
 	private String bairro;
 
-	public Endereco(String rua, String numero, String bairro) {
+	public Endereco(String rua, String numero, String bairro) throws InfoInvalidaException{
         setRua(rua);
         setNumero(numero);
         setBairro(bairro);
@@ -31,10 +33,9 @@ public class Endereco {
 		return this.rua;
 	}
 
-	public void setRua(String rua) {
+	public void setRua(String rua) throws InfoInvalidaException {
 		if (rua == null || rua.length() < 1) {
-			System.out.println("Valor de rua nao pode ser vazio");
-			return;
+			throw new InfoInvalidaException("Valor de rua nao pode ser vazio");
 		}
 		this.rua = rua;
 	}
@@ -43,10 +44,10 @@ public class Endereco {
 		return this.numero;
 	}
 
-	public void setNumero(String numero) {
+	public void setNumero(String numero) throws InfoInvalidaException {
 		if (numero == null || numero.length() < 1) {
-			System.out.println("Valor do numero nao pode ser vazio");
-			return;
+			throw new InfoInvalidaException("Valor do numero nao pode ser vazio");
+			
 		}
 		this.numero = numero;
 	}
@@ -55,10 +56,9 @@ public class Endereco {
 		return this.bairro;
 	}
 
-	public void setBairro(String bairro) {
+	public void setBairro(String bairro) throws InfoInvalidaException {
 		if (bairro == null || bairro.length() < 1) {
-			System.out.println("Valor de bairro nao pode ser vazio");
-			return;
+			throw new InfoInvalidaException("Valor de bairro nao pode ser vazio");
 		}
 		this.bairro = bairro;
 	}
