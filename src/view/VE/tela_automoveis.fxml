@@ -51,15 +51,15 @@
             <Image url="@4icon_orçamento.png" />
          </image>
       </ImageView>
-      <TextField alignment="CENTER" layoutX="177.0" layoutY="106.0" prefHeight="25.0" prefWidth="184.0" />
+      <TextField fx:id="pesquisar" alignment="CENTER" layoutX="177.0" layoutY="106.0" prefHeight="25.0" prefWidth="184.0" />
       <Label layoutX="202.0" layoutY="110.0" text="Pesquisar" textFill="#727272" />
       <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="181.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Search_fill%20(1).png" />
+            <Image url="@pesquisar.png" />
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="10.0" fill="#ababab" height="49.0" layoutX="5.0" layoutY="167.0" stroke="#ababab" strokeType="INSIDE" width="594.0" />
-      <Button layoutX="371.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #333544;" text="Adicionar" textFill="WHITE" />
+      <Button fx:id="adicionar" layoutX="371.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #333544;" text="Adicionar" textFill="WHITE" />
       <Label layoutX="38.0" layoutY="130.0" prefHeight="21.0" prefWidth="85.0" text="Automovel">
          <font>
             <Font size="15.0" />

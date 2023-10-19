@@ -280,12 +280,12 @@
                   <Label layoutX="10.0" layoutY="172.0" text="ID" />
                   <Label layoutX="123.0" layoutY="172.0" text="Proprietário" />
                   <TextField layoutX="123.0" layoutY="197.0" prefHeight="25.0" prefWidth="269.0" />
-                  <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="370.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="seach_proprietario" fitHeight="19.0" fitWidth="19.0" layoutX="370.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@icon_Edit.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="166.0" layoutY="240.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #333544;" text="Confirmar" textFill="WHITE" />
+                  <Button fx:id="confirmar" layoutX="166.0" layoutY="240.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #333544;" text="Confirmar" textFill="WHITE" />
                </children>
             </AnchorPane>
         </items>
