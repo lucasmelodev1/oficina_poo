@@ -50,13 +50,13 @@
       </ImageView>
       <Label layoutX="186.0" layoutY="215.0" text="Usuário" textFill="#00000077" />
       <Label layoutX="187.0" layoutY="258.0" text="Senha" textFill="#00000077" />
-      <Button fx:id="entrar" layoutX="265.0" layoutY="302.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="76.0" style="-fx-background-color: #333544;" text="Entrar" textAlignment="CENTER" textFill="WHITE" />
+      <Button fx:id="botaoEntrar" layoutX="265.0" layoutY="302.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="76.0" style="-fx-background-color: #333544;" text="Entrar" textAlignment="CENTER" textFill="WHITE" />
       <Label alignment="CENTER" layoutX="164.0" layoutY="348.0" prefHeight="21.0" prefWidth="153.0" text="Não possui conta?">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Button fx:id="entrar1" cacheHint="ROTATE" depthTest="ENABLE" layoutX="311.0" layoutY="348.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="101.0" style="-fx-background-color: #333544;" text="Clique aqui!" textAlignment="CENTER" textFill="WHITE">
+      <Button fx:id="botaoRegistro" cacheHint="ROTATE" depthTest="ENABLE" layoutX="311.0" layoutY="348.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="101.0" style="-fx-background-color: #333544;" text="Clique aqui!" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font size="10.0" />
          </font></Button>

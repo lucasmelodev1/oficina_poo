@@ -8,47 +8,46 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
          <children>
             <ImageView fitHeight="246.0" fitWidth="327.0" layoutX="167.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@logo_dashboard.png" />
+                  <Image url="@../../../../../Desktop/view/VE/logo_dashboard.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="63.0" fitWidth="97.0" layoutX="25.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@home_stage.png" />
+                  <Image url="@../../../../../Desktop/view/VE/home_stage.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="67.0" fitWidth="63.0" layoutX="198.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@1icon_automoveis.png" />
+                  <Image url="@../../../../../Desktop/view/VE/1icon_automoveis.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="286.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@5icon_peças.png" />
+                  <Image url="@../../../../../Desktop/view/VE/5icon_peças.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="70.0" fitWidth="63.0" layoutX="373.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@6icon_serviços.png" />
+                  <Image url="@../../../../../Desktop/view/VE/6icon_serviços.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="109.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@2icon_clientes.png" />
+                  <Image url="@../../../../../Desktop/view/VE/2icon_clientes.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="70.0" fitWidth="63.0" layoutX="464.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@4icon_orçamento.png" />
+                  <Image url="@../../../../../Desktop/view/VE/4icon_orçamento.png" />
                </image>
             </ImageView>
-            <Button layoutX="549.0" layoutY="9.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="43.0" style="-fx-background-color: #333544;" text="Sair" textFill="WHITE">
+            <Button fx:id="botaoSair" layoutX="549.0" layoutY="9.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="43.0" style="-fx-background-color: #333544;" text="Sair" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -68,18 +67,18 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label layoutX="36.0" layoutY="77.0" text="Home" />
-            <Label layoutX="121.0" layoutY="77.0" text="Clientes" />
-            <Label layoutX="199.0" layoutY="77.0" text="Automóveis" />
-            <Label layoutX="304.0" layoutY="77.0" text="Peças" />
-            <Label layoutX="384.0" layoutY="77.0" text="Serviços" />
-            <Label layoutX="468.0" layoutY="77.0" text="Orçamento" />
             <Button layoutX="9.0" layoutY="5.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="85.0" style="-fx-background-color: #333544;" textFill="WHITE" visible="false" />
             <Button layoutX="98.0" layoutY="5.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="85.0" style="-fx-background-color: #333544;" textFill="WHITE" visible="false" />
             <Button layoutX="454.0" layoutY="5.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="85.0" style="-fx-background-color: #333544;" textFill="WHITE" visible="false" />
             <Button layoutX="365.0" layoutY="5.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="85.0" style="-fx-background-color: #333544;" textFill="WHITE" visible="false" />
             <Button layoutX="276.0" layoutY="5.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="85.0" style="-fx-background-color: #333544;" textFill="WHITE" visible="false" />
             <Button layoutX="187.0" layoutY="5.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="85.0" style="-fx-background-color: #333544;" textFill="WHITE" visible="false" />
+            <Button fx:id="botaoHome" layoutX="28.0" layoutY="73.0" mnemonicParsing="false" text="Home" />
+            <Button fx:id="botaoClientes" layoutX="112.0" layoutY="73.0" mnemonicParsing="false" text="Clientes" />
+            <Button fx:id="botaoAutomoveis" layoutX="191.0" layoutY="73.0" mnemonicParsing="false" text="Automóveis" />
+            <Button fx:id="botaoPecas" layoutX="295.0" layoutY="73.0" mnemonicParsing="false" text="Peças" />
+            <Button fx:id="botaoServicos" layoutX="375.0" layoutY="73.0" mnemonicParsing="false" text="Serviços" />
+            <Button fx:id="botaoOrcamento" layoutX="459.0" layoutY="73.0" mnemonicParsing="false" text="Orçamento" />
          </children>
       </Pane>
    </children>
